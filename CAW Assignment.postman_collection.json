@@ -1,0 +1,629 @@
+{
+	"id": "75d54f06-3c74-eeaf-8fc1-58af6d87b7b7",
+	"name": "CAW Assignment",
+	"description": "",
+	"order": [
+		"dd3e846f-870b-de75-7790-865613561212",
+		"d373e360-df6b-ff29-836d-fa6386e43883",
+		"a951dac3-52d9-561c-ac7a-b35ff44952a3",
+		"de7141ef-82bf-bc69-b777-6f10036590f2",
+		"afc6c62d-c807-78a5-d88f-bd5bac677e6e",
+		"cf817902-c0cf-d965-2008-779b72208b78",
+		"566c8a80-c32b-1a5e-2c0e-37b19ae94dab"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1581761790590,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "566c8a80-c32b-1a5e-2c0e-37b19ae94dab",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/movies/screens/inox/seats?status=unreserved",
+			"queryParams": [
+				{
+					"key": "status",
+					"value": "unreserved",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "75d54f06-3c74-eeaf-8fc1-58af6d87b7b7",
+			"data": null,
+			"dataMode": "params",
+			"name": "unreserved tickets",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1581765588947,
+			"version": 2,
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 300,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "124",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 15 Feb 2020 11:19:09 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"7c-ojQ6xHCNNcW4Trj/4QtqVIU31fg\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"seats\":{\"A\":[0,1,2,3,4,5,6,7,8,9],\"B\":[0,1,2,3,4,5,8,9,10,11,12,13,14],\"D\":[0,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]}}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "unreserved tickets",
+					"id": "ca208ed5-134c-7f8a-4546-062e8cd3a08e",
+					"request": {
+						"url": "http://localhost:3000/movies/screens/inox/seats?status=unreserved",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [
+							{
+								"key": "status",
+								"value": "unreserved",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headerData": [],
+						"headers": "",
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					}
+				}
+			],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "a951dac3-52d9-561c-ac7a-b35ff44952a3",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/users/login",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "75d54f06-3c74-eeaf-8fc1-58af6d87b7b7",
+			"data": [],
+			"dataMode": "raw",
+			"name": "users - login",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1581762553449,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n    \"email\" : \"dheeraj@gmail.com\",\n    \"password\" : \"abcd1234\"\n}"
+		},
+		{
+			"id": "afc6c62d-c807-78a5-d88f-bd5bac677e6e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/movies/screens",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1581763548584,
+			"name": "movies - screens : Total seats in a Screen",
+			"description": "",
+			"collectionId": "75d54f06-3c74-eeaf-8fc1-58af6d87b7b7",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 467,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "20",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 15 Feb 2020 10:44:40 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"14-Y53wuE/mmbSikKcT/WualL1N65U\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"status\":\"success\"}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "movies - screens : Total seats in a Screen",
+					"id": "e28ba63b-2f56-4997-da2f-9d74ea119078",
+					"request": {
+						"url": "http://localhost:3000/movies/screens",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true,
+								"warning": ""
+							}
+						],
+						"headers": "Content-Type: application/json\n",
+						"data": "{ \n\t\"name\":\"inox\", \n\t\"seatInfo\": \n\t{ \n\t\t\"A\": \n\t\t{ \n\t\t\t\"numberOfSeats\": 10\n\t\t}, \n\t\t\"B\": \n\t\t{ \n\t\t\t\"numberOfSeats\": 15\n\t\t\t\n\t\t}, \n\t\t\"D\": \n\t\t{ \n\t\t\t\"numberOfSeats\": 20\n\t\t}\n\t}\n}",
+						"method": "POST",
+						"dataMode": "raw"
+					}
+				}
+			],
+			"rawModeData": "{ \n\t\"name\":\"inox\", \n\t\"seatInfo\": \n\t{ \n\t\t\"A\": \n\t\t{ \n\t\t\t\"numberOfSeats\": 10\n\t\t}, \n\t\t\"B\": \n\t\t{ \n\t\t\t\"numberOfSeats\": 15\n\t\t\t\n\t\t}, \n\t\t\"D\": \n\t\t{ \n\t\t\t\"numberOfSeats\": 20\n\t\t}\n\t}\n}"
+		},
+		{
+			"id": "cf817902-c0cf-d965-2008-779b72208b78",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/movies/screens/inox/reserve",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1581765414203,
+			"name": "Book Tickets",
+			"description": "",
+			"collectionId": "75d54f06-3c74-eeaf-8fc1-58af6d87b7b7",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 1265,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "58",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 15 Feb 2020 11:16:28 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"3a-M3F1EnYzn+bIrmpQ+cqsqNKQaz8\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"status\":\"success\",\"message\":\"Reservation is successful\"}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "Book Tickets",
+					"id": "8671fde1-fd04-5801-902d-8f8111aa5f3a",
+					"request": {
+						"url": "http://localhost:3000/movies/screens/inox/reserve",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Content-Type: application/json\n",
+						"data": "{ \n\t\"seats\": { \n\t\t\"B\": [6, 7],\n\t\t\"D\": [ 1, 2, 3]\n\t}\n}",
+						"method": "POST",
+						"dataMode": "raw"
+					}
+				}
+			],
+			"rawModeData": "{ \n\t\"seats\": { \n\t\t\"B\": [6, 7],\n\t\t\"D\": [ 1, 2, 3]\n\t}\n}"
+		},
+		{
+			"id": "d373e360-df6b-ff29-836d-fa6386e43883",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/movies/",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1581761905411,
+			"name": "movies with show times",
+			"description": "",
+			"collectionId": "75d54f06-3c74-eeaf-8fc1-58af6d87b7b7",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 95,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "813",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 15 Feb 2020 06:51:48 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"32d-FTjoR7m1L1pvbPEsd+tKH8s/CbQ\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"status\":\"success\",\"movies\":[{\"title\":\"Titanic\",\"days\":[\"Today\",\"Tomorrow\",\"Mon, Feb 17\"],\"times\":[\"9:00 AM\",\"11:10 AM\",\"12:00 PM\",\"1:50 PM\",\"4:30 PM\",\"6:00 PM\",\"7:10 PM\",\"9:45 PM\"]},{\"title\":\"Avengers\",\"days\":[\"Today\",\"Tomorrow\",\"Mon, Feb 17\"],\"times\":[\"9:00 AM\",\"11:10 AM\",\"12:00 PM\",\"1:50 PM\",\"4:30 PM\",\"6:00 PM\",\"7:10 PM\",\"9:45 PM\"]},{\"title\":\"Avatar\",\"days\":[\"Today\",\"Tomorrow\",\"Mon, Feb 17\"],\"times\":[\"9:00 AM\",\"11:10 AM\",\"12:00 PM\",\"1:50 PM\",\"4:30 PM\",\"6:00 PM\",\"7:10 PM\",\"9:45 PM\"]},{\"title\":\"Kung fu Panda\",\"days\":[\"Today\",\"Tomorrow\",\"Mon, Feb 17\"],\"times\":[\"9:00 AM\",\"11:10 AM\",\"12:00 PM\",\"1:50 PM\",\"4:30 PM\",\"6:00 PM\",\"7:10 PM\",\"9:45 PM\"]},{\"title\":\"Despicable me\",\"days\":[\"Today\",\"Tomorrow\",\"Mon, Feb 17\"],\"times\":[\"9:00 AM\",\"11:10 AM\",\"12:00 PM\",\"1:50 PM\",\"4:30 PM\",\"6:00 PM\",\"7:10 PM\",\"9:45 PM\"]}]}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "movies with show times",
+					"id": "7a148957-7ca0-491c-a2ac-3583f2a4cb4e",
+					"request": {
+						"url": "http://localhost:3000/movies/",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Content-Type: application/json\n",
+						"data": "{\n    \"email\" : \"dheeraj7889@gmail.com\",\n    \"password\" : \"abcd1234567\"\n}",
+						"method": "GET",
+						"dataMode": "raw"
+					}
+				}
+			],
+			"rawModeData": "{\n    \"email\" : \"dheeraj7889@gmail.com\",\n    \"password\" : \"abcd1234567\"\n}"
+		},
+		{
+			"id": "dd3e846f-870b-de75-7790-865613561212",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/users/signup",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1581761814677,
+			"name": "users - signup",
+			"description": "",
+			"collectionId": "75d54f06-3c74-eeaf-8fc1-58af6d87b7b7",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 201,
+						"name": "Created",
+						"detail": "The request has been fulfilled and resulted in a new resource being created."
+					},
+					"time": 1179,
+					"headers": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "320",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 15 Feb 2020 05:40:36 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"140-NpJpGtnM0x8hdqJ/kwXepbhdPIk\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"status\":\"success\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlNDc4NDU0MmFlMzA2MTE4NDFjNjEwMSIsImlhdCI6MTU4MTc0NTIzNiwiZXhwIjoxNTg5NTIxMjM2fQ.UTy8Getxz0WRYKtl6LMpZJ741OqZKWqGjotME_5tjjI\",\"data\":{\"user\":{\"active\":true,\"_id\":\"5e4784542ae30611841c6101\",\"name\":\"Dheeraj\",\"email\":\"dheeraj@gmail.com\",\"__v\":0}}}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "users - signup",
+					"id": "820fd41a-faca-67de-46a5-629de3ed5d1a",
+					"request": {
+						"url": "http://localhost:3000/users/signup",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Content-Type: application/json\n",
+						"data": "{\n\t\"name\" : \"Dheeraj\",\n    \"email\" : \"dheeraj@gmail.com\",\n    \"password\" : \"abcd1234\",\n    \"passwordConfirm\" : \"abcd1234\"\n}",
+						"method": "POST",
+						"dataMode": "raw"
+					}
+				}
+			],
+			"rawModeData": "{\n\t\"name\" : \"Dheeraj\",\n    \"email\" : \"dheeraj@gmail.com\",\n    \"password\" : \"abcd1234\",\n    \"passwordConfirm\" : \"abcd1234\"\n}"
+		},
+		{
+			"id": "de7141ef-82bf-bc69-b777-6f10036590f2",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/users/logout",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "75d54f06-3c74-eeaf-8fc1-58af6d87b7b7",
+			"data": null,
+			"dataMode": "params",
+			"name": "users - logout",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1581762631749,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
